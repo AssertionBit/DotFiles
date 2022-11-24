@@ -73,7 +73,10 @@ cmp.setup({
 
 require('lspconfig')['pyright'].setup {
   capabilities = capabilities,
+}
 
+require('lspconfig')['serve_d'].setup {
+  capabilities = capabilities
 }
 
 require('lspconfig')['clangd'].setup {
