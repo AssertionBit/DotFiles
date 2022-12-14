@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/Users/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/Users/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/Users/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/Users/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/Users/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/assertionbit/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -76,89 +76,89 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   LuaSnip = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/LuaSnip",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
   ["barbecue.nvim"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rbarbecue\frequire\0" },
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/barbecue.nvim",
     url = "https://github.com/utilyre/barbecue.nvim"
   },
   ["cmp-buffer"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-buffer",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-buffer",
     url = "https://github.com/hrsh7th/cmp-buffer"
   },
   ["cmp-cmdline"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-cmdline",
     url = "https://github.com/hrsh7th/cmp-cmdline"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   ["cmp-path"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-path",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
   cmp_luasnip = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
   ["deoplete-d"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/deoplete-d",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/deoplete-d",
     url = "https://github.com/landaire/deoplete-d"
   },
   ["git-blame.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/git-blame.nvim",
     url = "https://github.com/f-person/git-blame.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
   ["gruvbox-material"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/gruvbox-material",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/gruvbox-material",
     url = "https://github.com/sainnhe/gruvbox-material"
   },
   harpoon = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/harpoon",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/harpoon",
     url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["mason.nvim"] = {
     config = { "\27LJ\2\n�\1\0\0\5\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\2B\0\2\1K\0\1\0\aui\1\0\0\nicons\1\0\0\1\0\3\24package_uninstalled\b✗\22package_installed\b✓\20package_pending\b➜\nsetup\nmason\frequire\0" },
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/mason.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
   ["ncm2-bufword"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/ncm2-bufword",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/ncm2-bufword",
     url = "https://github.com/ncm2/ncm2-bufword"
   },
   ["ncm2-d"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/ncm2-d",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/ncm2-d",
     url = "https://github.com/ncm2/ncm2-d"
   },
   ["ncm2-path"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/ncm2-path",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/ncm2-path",
     url = "https://github.com/ncm2/ncm2-path"
   },
   neodim = {
@@ -166,67 +166,67 @@ _G.packer_plugins = {
     loaded = false,
     needs_bufread = false,
     only_cond = false,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/opt/neodim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/opt/neodim",
     url = "https://github.com/zbirenbaum/neodim"
   },
   ["nui.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nui.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
   ["nvim-cmp"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-cmp",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
   ["nvim-navic"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-navic",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-navic",
     url = "https://github.com/smiteshp/nvim-navic"
   },
   ["nvim-notify"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-notify",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["nvim-yarp"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-yarp",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/nvim-yarp",
     url = "https://github.com/roxma/nvim-yarp"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["sqls.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/sqls.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/sqls.nvim",
     url = "https://github.com/nanotee/sqls.nvim"
   },
   ["swenv.nvim"] = {
     loaded = true,
-    path = "/Users/assertionbit/.local/share/nvim/site/pack/packer/start/swenv.nvim",
+    path = "/home/assertionbit/.local/share/nvim/site/pack/packer/start/swenv.nvim",
     url = "https://github.com/AckslD/swenv.nvim"
   }
 }
