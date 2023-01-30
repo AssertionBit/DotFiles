@@ -97,6 +97,21 @@ require('lspconfig')['luau_lsp'].setup(
     capabilities=capabilities
 }))
 
+require('lspconfig')['solargraph'].setup(
+  coq.lsp_ensure_capabilities({
+    capabilities=capabilities
+}))
+
+require('lspconfig')['ruby_ls'].setup(
+  coq.lsp_ensure_capabilities({
+    capabilities=capabilities
+}))
+
+require('lspconfig')['zls'].setup(
+  coq.lsp_ensure_capabilities({
+    capabilities=capabilities
+}))
+
 require('lspconfig')['sumneko_lua'].setup(
   coq.lsp_ensure_capabilities({
   settings = {

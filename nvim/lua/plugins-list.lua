@@ -3,7 +3,7 @@ local ensure_packer = function()
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
   if fn.empty(fn.glob(install_path)) > 0 then
     fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
+    vim.cmd [[ packadd packer.nvim ]]
     return true
   end
   return false
@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
   -- Global configs
   use 'lewis6991/gitsigns.nvim'
   use 'f-person/git-blame.nvim'
-  
+
   -- LSP
   use 'neovim/nvim-lspconfig'
   use 'nanotee/sqls.nvim'
@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
   use 'ncm2/ncm2-bufword'
   use 'ncm2/ncm2-d'
   use 'nvim-treesitter/nvim-treesitter'
-  use { 
+  use {
     'williamboman/mason.nvim',
     config = function()
       require('mason').setup({
@@ -46,14 +46,23 @@ return require('packer').startup(function(use)
             package_uninstalled = "✗"
           }
         }
-      }) 
+      })
     end
   }
   use 'ms-jpq/coq_nvim'
 
   -- Tweeks
   use 'pocco81/auto-save.nvim'
-  use 'filipdutescu/renamer.nvim' 
+  use 'filipdutescu/renamer.nvim'
+  use 'gpanders/editorconfig.nvim'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
 
   -- UI
   use 'nvim-lualine/lualine.nvim'
@@ -61,11 +70,18 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'ThePrimeagen/harpoon'
   use 'nvim-telescope/telescope.nvim'
-  
   -- use 'folke/noice.nvim' -- Not completable with tree-sitter
   use 'MunifTanjim/nui.nvim'
   use 'rcarriga/nvim-notify'
   use "smiteshp/nvim-navic"
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+    config = function()
+      require("todo-comments").setup {}
+    end
+  }
+
 
   use {
     "utilyre/barbecue.nvim",

@@ -74,3 +74,5 @@ require('renamer').setup {
     -- the LSP 'textDocument/rename' raw response as its parameter.
     handler = nil,
 }
+
+require("nvim-tree").setup()
