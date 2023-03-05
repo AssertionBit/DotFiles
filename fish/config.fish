@@ -190,12 +190,11 @@ end
 ### ALIASES ###
 
 #list
-alias ls="ls --color=auto"
-alias la="ls -a"
-alias ll="ls -alFh"
-alias l="ls"
-alias l.="ls -A | egrep '^\.'"
-alias listdir="ls -d */ > list"
+alias ls="lsd"
+alias la="lsd -a"
+alias ll="lsd -l"
+alias lla="lsd -la"
+alias tree="lsd --tree"
 
 #pacman
 alias sps='sudo pacman -S'
@@ -525,7 +524,7 @@ end
 alias undopush "git push -f origin HEAD^:master"
 
 # reporting tools - install when not installed
-neofetch
+#neofetch
 #screenfetch
 #alsi
 #paleofetch
