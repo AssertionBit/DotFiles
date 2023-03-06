@@ -70,7 +70,7 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'ThePrimeagen/harpoon'
   use 'nvim-telescope/telescope.nvim'
-  -- use 'folke/noice.nvim' -- Not completable with tree-sitter
+  use 'folke/noice.nvim' -- Not completable with tree-sitter
   use 'MunifTanjim/nui.nvim'
   use 'rcarriga/nvim-notify'
   use "smiteshp/nvim-navic"

@@ -70,71 +70,37 @@ cmp.setup({
 
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local coq = require("coq")
 
-require('lspconfig')['pyright'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities = capabilities,
-}))
+local lsp_list = {
+  'pyright',
+  'cmake',
+  'serve_d',
+  'clangd',
+  'bashls',
+  'solargraph',
+  'ruby_ls',
+  'lua_ls'
+}
 
-require('lspconfig')['serve_d'].setup(
-  coq.lsp_ensure_capabilities({
+for i, lsp in ipairs(lsp_list) do 
+  require('lspconfig')[lsp].setup({
     capabilities = capabilities
-}))
+  })
+end
 
-require('lspconfig')['clangd'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities = capabilities,
-}))
-
-require('lspconfig')['bashls'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities = capabilities
-}))
-
-require('lspconfig')['luau_lsp'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities=capabilities
-}))
-
-require('lspconfig')['solargraph'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities=capabilities
-}))
-
-require('lspconfig')['ruby_ls'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities=capabilities
-}))
-
-require('lspconfig')['zls'].setup(
-  coq.lsp_ensure_capabilities({
-    capabilities=capabilities
-}))
-
-require('lspconfig')['sumneko_lua'].setup(
-  coq.lsp_ensure_capabilities({
+---- Additional configurations for NeoVim LUA
+require('lspconfig').lua_ls.setup({
   settings = {
     Lua = {
       runtime = {
-        -- Tell the language server which version of Lua you're using (most likely LuaJIT in the case of Neovim)
-        version = 'LuaJIT',
+        version = 'LuaJIT'
       },
       diagnostics = {
-        -- Get the language server to recognize the `vim` global
         globals = {'vim'},
-      },
-      workspace = {
-        -- Make the server aware of Neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true),
-      },
-      -- Do not send telemetry data containing a randomized but unique identifier
-      telemetry = {
-        enable = false,
-      },
-    },
-  },
-}))
+      }
+    }
+  }
+})
 
 -- Tree sitter
 require'nvim-treesitter.configs'.setup {
