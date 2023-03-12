@@ -16,7 +16,13 @@ return require('packer').startup(function(use)
 
   -- Global configs
   use 'lewis6991/gitsigns.nvim'
-  use 'f-person/git-blame.nvim'
+  use 'f-person/git-blame.nvim' 
+  use {
+    'simrat39/symbols-outline.nvim',
+    config = function()
+      require("symbols-outline").setup()
+    end
+  }
 
   -- LSP
   use 'neovim/nvim-lspconfig'

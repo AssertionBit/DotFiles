@@ -79,7 +79,8 @@ local lsp_list = {
   'bashls',
   'solargraph',
   'ruby_ls',
-  'lua_ls'
+  'lua_ls',
+  'kotlin_language_server'
 }
 
 for i, lsp in ipairs(lsp_list) do 
