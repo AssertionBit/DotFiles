@@ -523,6 +523,8 @@ end
 # omf install https://github.com/jhillyerd/plugin-git
 alias undopush "git push -f origin HEAD^:master"
 
+alias nvim = 'neovide'
+
 # reporting tools - install when not installed
 #neofetch
 #screenfetch

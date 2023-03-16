@@ -80,7 +80,11 @@ local lsp_list = {
   'solargraph',
   'ruby_ls',
   'lua_ls',
-  'kotlin_language_server'
+  'julials',
+
+  -- Frontend development
+  'svelte',
+  'tsserver'
 }
 
 for i, lsp in ipairs(lsp_list) do 

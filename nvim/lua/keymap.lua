@@ -11,3 +11,4 @@ vim.keymap.set('n', '<C-]>', '<Cmd>NvimTreeResize +5<cr>', {})
 
 -- Renaming
 vim.keymap.set('n', '<C-r>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true } )
+
