@@ -3,7 +3,7 @@ local ensure_packer = function()
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
   if fn.empty(fn.glob(install_path)) > 0 then
     fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[ packadd packer.nvim ]]
+    vim.cmd("packadd packer.nvim")
     return true
   end
   return false
@@ -13,10 +13,11 @@ local packer_bootstrap = ensure_packer()
 
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'wakatime/vim-wakatime'
 
   -- Global configs
   use 'lewis6991/gitsigns.nvim'
-  use 'f-person/git-blame.nvim' 
+  use 'f-person/git-blame.nvim'
   use {
     'simrat39/symbols-outline.nvim',
     config = function()
